@@ -1,65 +1,94 @@
 <!DOCTYPE html>
-    <html lang="eng">
-    <head>
-        <title>
-            Timetable
-        </title>
-        <link rel="stylesheet" href="styles.css">
-    </head>
+<html lang="en">
 
-    <body>
-        <div class="navbar">
-            <div class="nav-items" id="logo">Logo</div>
-            <div class="nav-items">Home</div>
-            <div class="nav-items">Timetable</div>
-            <div class="nav-items">Events</div>
-            <div class="nav-items">About us</div>
-            <div class="nav-items" id="profile">Profile</div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Timetable
+    </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#left-main').one('mouseenter', function () {
+                var div = $("#grey");
+                div.animate({ width: '800px', opacity: '0.3' }, "slow").animate({ width: '1px', opacity: '0.3' }, "slow");
+            });
+        });
+    </script>
+    
+    
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="nav-items" id="logo">Logo</div>
+        <div class="nav-items">Home</div>
+        <div class="nav-items">Timetable</div>
+        <div class="nav-items">Events</div>
+        <div class="nav-items">About us</div>
+        <div class="nav-items" id="profile">Profile</div>
+    </div>
+
+    <div class="main_content">
+        <div id="left-main">
+            <div class="your"><b>Your </b>timetable,</div>
+            <div class="your"><b>Your </b>events,</div>
+            <div class="your""><b>Your </b>way</div> 
+            <div class=" your">– all at your fingertips.</div>
         </div>
+        <div id="grey" style="background:#cacaca;height:500px;width:100px;position:absolute;opacity: 0.1;"></div>
+        <div id="right-main"><img id="home_image"
+                src="https://images.pexels.com/photos/585752/pexels-photo-585752.jpeg?auto=compress&cs=tinysrgb&w=600">
+        </div>
+    </div>
 
-        <div class="main_content">
-            <div id="left-main">
-                <div class="your"><b>Your </b>timetable,</div>
-                <div class="your"><b>Your </b>events,</div> 
-                <div class="your""><b>Your </b>way</div> 
-                <div class="your">– all at your fingertips.</div>
+    <div class="objectives">
+        <div class="objective">
+            <div class="obj_text">Simplified Timetable Handling</div>
+        </div>
+        <div class="objective">
+            <div class="obj_text">Event Central for Registration</div>
+        </div>
+        <div class="objective">
+            <div class="obj_text">Seamless Curricular Blend</div>
+        </div>
+        <div class="objective">
+            <div class="obj_text">Effortless Timetable Streamlining</div>
+        </div>
+        <div class="objective">
+            <div class="obj_text">Enhanced Communication & Collaboration</div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div id="blank">
+            <div id="contact">Contact with us:</div>
+            <div id="contact_details">
+                Email: raviraj.parab"vit.edu.in<br>
+                Phone: +123-456-7890<br>
+                Maharastra, India<br>
             </div>
-            <div id="right-main"><img id="home_image" src="https://images.pexels.com/photos/585752/pexels-photo-585752.jpeg?auto=compress&cs=tinysrgb&w=600"></div>
         </div>
-
-        <div class="objectives">
-            <div class="objective"><div class="obj_text">Simplified Timetable Handling</div></div>
-            <div class="objective"><div class="obj_text">Event Central for Registration</div></div>
-            <div class="objective"><div class="obj_text">Seamless Curricular Blend</div></div>
-            <div class="objective"><div class="obj_text">Effortless Timetable Streamlining</div></div>
-            <div class="objective"><div class="obj_text">Enhanced Communication & Collaboration</div></div>
-        </div>
-
-
-        <footer>
-            <div id="blank">
-                <div id="contact">Contact with us:</div>
-                <div id="contact_details">
-                    Email: raviraj.parab"vit.edu.in<br>
-                    Phone: +123-456-7890<br>
-                    Maharastra, India<br>
-                </div>
-            </div>
-            <div id="footer_info">
-                <div class="follow">
+        <div id="footer_info">
+            <div class="follow">
                 <div>About us:</div>
                 <div>Follow us:</div>
-                </div>
-                <div class="terms">
-                    <div>Privacy</div>
-                    <div>Terms of use</div>
-                    <div>Cookie Preferences</div>
-                </div>
             </div>
-            
-            
-        </footer>
-    </body>
+            <div class="terms">
+                <div>Privacy</div>
+                <div>Terms of use</div>
+                <div>Cookie Preferences</div>
+            </div>
+        </div>
+
+
+    </footer>
+</body>
 
 
 

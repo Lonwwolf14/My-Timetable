@@ -34,33 +34,35 @@
     font-family: 'Roboto', sans-serif;
     max-width: 50%;
     flex: 1;
-    padding: 50px;
+    padding: 50px 30px 0px 50px;
+    background: white;
 }
 
-.your{
+.your {
     font-size: 70px;
 }
 
+
 #right-main {
     max-width: 50%;
-    flex: 1; 
+    flex: 1;
 }
 
-#home_image{
+#home_image {
     height: 500px;
     max-width: 100%;
 }
 
-.objectives{
+.objectives {
     display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 50px;
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 70px 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 70px 10px;
 }
 
 .objective {
@@ -68,38 +70,26 @@
     max-width: 350px;
     height: 100px;
     border-radius: 10px;
-    background-color: rgb(255, 255, 255); /* Changed #white to white */
+    background-color: rgb(255, 255, 255);
+    /* Changed #white to white */
     box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
 }
 
-.obj_text{
+.obj_text {
     text-align: center;
     padding-top: 30px;
     font-size: 20px;
     font-family: serif;
 }
 
-footer{
+footer {
     background-color: rgb(60, 60, 60);
     color: white;
     height: 200px;
     display: flex;
 }
 
-.follow{
-    display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 50px;
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 30px 10px 0px 200px;
-  font-size: 20px;
-}
-
-.terms{
+.follow {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -112,22 +102,33 @@ footer{
     font-size: 20px;
 }
 
-#blank{
-    width: 30%;
-    border-right: #bdbcbb solid ;
+.terms {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 30px 10px 0px 200px;
+    font-size: 20px;
 }
 
-#contact{
+#blank {
+    width: 30%;
+    border-right: #bdbcbb solid;
+}
+
+#contact {
     padding: 50px 40px 5px 130px;
     font-size: 20px;
     font-weight: bold;
     max-width: 500px;
 }
-#contact_details{
+
+#contact_details {
     padding: 30px 40px 0px 130px;
     font-size: 15px;
     max-width: 300px;
 }
-
-
-
