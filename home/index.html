@@ -11,11 +11,14 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
         $(document).ready(function () {
+            // Splash screen logic
+
             $('#left-main').one('mouseenter', function () {
                 var div = $("#grey");
                 div.animate({ width: '800px', opacity: '0.3' }, "slow").animate({ width: '1px', opacity: '0.3' }, "slow");
-            });
+            }); // Adjust the delay as needed (in milliseconds)
         });
+
     </script>
 
 
@@ -24,15 +27,15 @@
 </head>
 
 <body>
-    <div class="navbar">
+    
+      <div class="navbar">
         <div class="nav-items" id="logo">Logo</div>
         <div class="nav-items">Home</div>
-        <div class="nav-items">Timetable</div>
+        <div class="nav-items"><a href="file:///C:/Users/parab/OneDrive/Documents/GitHub/My-Timetable/timetable/index.html">Timetable</a></div>
         <div class="nav-items">Events</div>
         <div class="nav-items">About us</div>
-        <div class="nav-items" id="profile"><a
-                href="file:///C:/Users/parab/OneDrive/Documents/GitHub/My-Timetable/form/register.html">New User?</a></div>
-    </div>
+        <div class="nav-items" id="profile"><a href="file:///C:/Users/parab/OneDrive/Documents/GitHub/My-Timetable/form/register.html">New User?</a></div>
+      </div>
 
     <div class="main_content">
         <div id="left-main">
