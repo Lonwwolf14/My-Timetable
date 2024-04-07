@@ -5,7 +5,7 @@
 #timetable{
     margin:auto;
     font-size: 20px;
-    margin-top: 7em;
+    margin-top: 2em;
 }
 
 .select_box{
@@ -35,3 +35,98 @@ th{
     font-size: 15px;
     padding-left: 10px;
 }
+
+.navbar {
+    display: flex;
+    background-color: white;
+    border-bottom: 2px solid #bdbcbb;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    height: 70px;
+}
+
+.nav-items {
+    padding: 10px;
+    margin: auto;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#profile {
+    padding-left: 50px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+#logo {
+    height: 50px; 
+    padding-left: 5px;
+}
+
+#timetable_bg{
+    background-color: #dfdfdf;
+}
+
+#left_main{
+    width: 100px;
+    background-color: #acacac;
+    display: flex;
+    flex: 1;
+    margin: 20px;
+    margin-top: 2em;
+}
+
+
+
+#right_main{
+    width: 100px;
+    background-color: #ffffff;
+    padding-left: 20px;
+    display: flex;
+    flex: 1;
+    margin-top: 2em;
+}
+
+.main_body{
+    display: flex;
+}
+
+#right_border{
+    margin: 20px;
+    background-color: #a4a4a4;
+    width: 5px;
+}
+
+#left_border{
+    margin: 20px;
+    background-color: #a4a4a4;
+    width: 5px;
+}
+
+.choose_th {
+    margin: auto;
+    background-image: linear-gradient(to bottom, rgb(222, 222, 222), rgb(255, 255, 255));
+    height: 25px;
+    width: 70px;
+    text-align: center; 
+    padding: 15px;
+}
+
+.choosen_subject{
+    font-family: 'Roboto', sans-serif;
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.2);
+    font-size: 15px;
+    padding: 20px;
+    text-align: center;
+}
+
+.choose_d_u{
+    font-size: 15px;
+    padding: 20px;
+    text-align: center;
+}
+
+
