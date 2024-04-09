@@ -4,33 +4,6 @@ body {
     padding: 0;
 }
 
-.container {
-    display: flex;
-}
-
-.committee {
-    width: 20%;
-    background-color: #f4f4f4;
-    padding: 20px;
-}
-
-.events {
-    width: 80%;
-    padding: 20px;
-}
-
-.event {
-    margin-bottom: 20px;
-    border: 1px solid #ddd;
-    padding: 10px;
-    background-color: #fff;
-}
-
-* {
-    margin: 0;
-    box-sizing: border-box; /* Added to include padding and border in element's total width and height */
-}
-
 .navbar {
     display: flex;
     background-color: white;
@@ -63,14 +36,28 @@ a {
 
 #events_bg {
     background-color: #dfdfdf;
-    cursor: pointer; /* Added to indicate that the element is clickable */
-    padding: 10px; /* Added padding for better appearance */
-    margin: auto; /* Center the text horizontally */
-    font-weight: bold; /* Make the text bold */
+    cursor: pointer;
+    padding: 10px;
+    margin: auto;
+    font-weight: bold;
 }
 
- /* Filter tabs styles */
- .filter-tabs {
+.container {
+    display: flex;
+}
+
+.committee {
+    width: 20%;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.events {
+    width: 80%;
+    padding: 20px;
+}
+
+.filter-tabs {
     display: flex;
     background-color: #fff;
     padding: 5px 20px 20px;
@@ -90,44 +77,39 @@ a {
     margin-right: 0;
 }
 
-.event-section{
-    padding-top: 10px;
-}
-
-.committee {
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin-bottom: 20px;
-}
-
-.committee h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-.committee ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.committee li {
-    margin-bottom: 10px;
-}
-
-.committee a {
-    display: block;
+.event-details {
     padding: 10px;
-    background-color: #f4f4f4;
-    border-radius: 5px;
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
 }
 
-.committee a:hover {
-    background-color: #e0e0e0;
+.event h3 {
+    margin: 0;
 }
+
+.event p {
+    margin: 5px 0;
+}
+
+.event-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: left;
+    gap: 16px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px 10px;
+  }
+  
+  .event img {
+    width: 250px; /* Set the width to a fixed value */
+    height: 300px; /* Set the height to a fixed value */
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  
+  .event::after {
+    content: "";
+    width: 350px;
+  }

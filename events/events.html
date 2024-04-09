@@ -10,8 +10,8 @@
 
 <body>
     <div class="navbar">
-        <div class="nav-items"><img id="logo"
-                src="C:\Users\parab\OneDrive\Documents\GitHub\My-Timetable\home\logo.png"></div>
+        <div class="nav-items"><img id="logo" src="C:\Users\parab\OneDrive\Documents\GitHub\My-Timetable\home\logo.png">
+        </div>
         <div class="nav-items"><a
                 href="file:///C:/Users/parab/OneDrive/Documents/GitHub/My-Timetable/home/index.html">Home</a></div>
         <div class="nav-items"><a
@@ -26,16 +26,16 @@
 
     <div class="container">
         <div class="committee">
-    <h2>Select Committee</h2>
-    <ul>
-        <li><a href="#" onclick="showAllEvents()">All Events</a></li>
-        <li class="committee-option"><a href="#" onclick="showEvents('cultural')">Cultural Committee</a></li>
-        <li class="committee-option"><a href="#" onclick="showEvents('sports')">Sports Committee</a></li>
-        <!-- Add more committee options as needed -->
-    </ul>
-</div>
+            <h2>Select Committee</h2>
+            <ul>
+                <li><a href="#" onclick="showAllEvents()">All Events</a></li>
+                <li class="committee-option"><a href="#" onclick="showEvents('cultural')">Cultural Committee</a></li>
+                <li class="committee-option"><a href="#" onclick="showEvents('sports')">Sports Committee</a></li>
+                <!-- Add more committee options as needed -->
+            </ul>
+        </div>
 
-        
+
 
         <div class="events" id="eventsContainer">
             <!-- Filter tabs -->
@@ -49,10 +49,14 @@
 
             <div id="culturalEvents" class="event-section">
                 <div class="event">
+                    <img src="C:\Users\parab\OneDrive\Documents\GitHub\My-Timetable\events\nights.jpeg"
+                        alt="Cultural Night Poster">
                     <h3>Cultural Night</h3>
                     <p>Date: April 15, 2024</p>
                 </div>
                 <div class="event">
+                    <img src="C:\Users\parab\OneDrive\Documents\GitHub\My-Timetable\events\dance.jpeg"
+                        alt="Dance Competition Poster">
                     <h3>Dance Competition</h3>
                     <p>Date: April 20, 2024</p>
                 </div>
@@ -60,14 +64,19 @@
 
             <div id="sportsEvents" class="event-section">
                 <div class="event">
+                    <img src="C:\Users\parab\OneDrive\Documents\GitHub\My-Timetable\events\football.jpeg"
+                        alt="Football Tournament Poster">
                     <h3>Football Tournament</h3>
                     <p>Date: April 17, 2024</p>
                 </div>
                 <div class="event">
+                    <img src="C:\Users\parab\OneDrive\Documents\GitHub\My-Timetable\events\basketball.jpeg"
+                        alt="Basketball Match Poster">
                     <h3>Basketball Match</h3>
                     <p>Date: April 22, 2024</p>
                 </div>
             </div>
+
         </div>
     </div>
     <!-- Merged content ends here -->
@@ -116,6 +125,8 @@
             // Show only upcoming events
             // You need to implement this based on your criteria
         }
+
+
     </script>
 
 </body>
