@@ -1,4 +1,7 @@
 <?php
+// Start a PHP session
+session_start();
+
 // Check if the form is submitted
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Retrieve form data
@@ -37,12 +40,30 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         die("Connection failed: " . $conn->connect_error);
     }
 
+    // Prepare SQL statement to check if email already exists
+    $check_sql = "SELECT email FROM users WHERE email='$email'";
+    $result = $conn->query($check_sql);
+
+    if ($result->num_rows > 0) {
+        // Email already exists, redirect to login page
+        header("Location: login.html");
+        exit;
+    }
+
     // Prepare SQL statement to insert data into the database
     $sql = "INSERT INTO users (first_name, last_name, address, email, phone, password, gender)
             VALUES ('$first_name', '$last_name', '$address', '$email', '$phone', '$hashed_password', '$gender')";
 
     if ($conn->query($sql) === TRUE) {
-        echo "New record created successfully";
+        // Registration successful, redirect to home page
+
+        // Save the first name in a session variable
+        $_SESSION['first_name'] = $first_name;
+
+        // Redirect to the home page
+        header("http://localhost/My-Timetable/home/index.html");
+        exit;
+
     } else {
         echo "Error: " . $sql . "<br>" . $conn->error;
     }
