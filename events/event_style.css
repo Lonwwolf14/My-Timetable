@@ -50,17 +50,17 @@ a {
     width: 20%;
     background-color: #f4f4f4;
     padding: 20px;
+    margin-top: 20px;
 }
 
 .events {
     width: 80%;
-    padding: 20px;
+    padding-top: 20px;
 }
 
 .filter-tabs {
     display: flex;
     background-color: #fff;
-    padding: 5px 20px 20px;
 }
 
 .filter-tab {
@@ -70,7 +70,7 @@ a {
     cursor: pointer;
     font-family: 'Roboto', sans-serif;
     box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.2);
-    padding: 10px;
+    padding: 15px;
 }
 
 .filter-tab:last-child {
@@ -83,10 +83,12 @@ a {
 
 .event h3 {
     margin: 0;
+    padding-left: 10px;
 }
 
 .event p {
     margin: 5px 0;
+    padding: 10px;
 }
 
 .event-section {
@@ -106,6 +108,7 @@ a {
     height: 300px; /* Set the height to a fixed value */
     object-fit: cover;
     border-radius: 10px;
+    padding: 10px;
   }
   
   
@@ -113,3 +116,15 @@ a {
     content: "";
     width: 350px;
   }
+
+  .event {
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 10px; /* Optional: add border-radius for rounded corners */
+    padding: 10px; /* Optional: add padding for inner content */
+    background-color: #ffffff; /* Optional: add background color */
+    border: 2px solid rgba(85, 85, 85, 0.5); /* Add border with darker color */
+}
+
+#eventsContainer{
+    padding-left: 20px ;
+}

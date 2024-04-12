@@ -4,56 +4,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>
-        Timetable
-    </title>
+    <title>Timetable</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            // Splash screen logic
-
-            $('#left-main').one('mouseenter', function () {
-                var div = $("#grey");
-                div.animate({ width: '800px', opacity: '0.3' }, "slow").animate({ width: '1px', opacity: '0.3' }, "slow");
-            }); // Adjust the delay as needed (in milliseconds)
-        });
-
-    </script>
-
-
-
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    
-      <div class="navbar">
+    <div class="navbar">
         <div class="nav-items"><img id="logo" src="logo.png"></div>
         <div class="nav-items" id="home">Home</div>
         <div class="nav-items"><a href="file:///C:/Users/parab/OneDrive/Documents/GitHub/My-Timetable/timetable/index.html">Timetable</a></div>
-        <div class="nav-items"><a href="file:///C:/Users/parab/OneDrive/Documents/GitHub/My-Timetable/events/events.html">Eventts</a></div>
+        <div class="nav-items"><a href="file:///C:/Users/parab/OneDrive/Documents/GitHub/My-Timetable/events/events.html">Events</a></div>
         <div class="nav-items">About us</div>
-        <div class="nav-items" id="profile"><a href="file:///C:/Users/parab/OneDrive/Documents/GitHub/My-Timetable/form/register.html">New User?</a></div>
-      </div>
+        <div class="nav-items" id="profile"><a href="file:///C:/Users/parab/OneDrive/Documents/GitHub/My-Timetable/login/login.html">Login</a></div>
+    </div>
 
     <div class="main_content">
         <div id="left-main">
             <div class="your"><b>Your </b>timetable,</div>
             <div class="your"><b>Your </b>events,</div>
-            <div class="your""><b>Your </b>way</div> 
-            <div class=" your">– all at your fingertips.</div>
+            <div class="your"><b>Your </b>way</div>
+            <div class="your">– all at your fingertips.</div>
         </div>
         <div id="grey" style="background:#cacaca;height:500px;width:100px;position:absolute;opacity: 0.1;"></div>
         <div id="right-main"><img id="home_image"
-                src="https://images.pexels.com/photos/585752/pexels-photo-585752.jpeg?auto=compress&cs=tinysrgb&w=600">
-        </div>
+                src="https://images.pexels.com/photos/585752/pexels-photo-585752.jpeg?auto=compress&cs=tinysrgb&w=600"></div>
     </div>
 
     <div class="objectives">
-        
+        <!-- Content of objectives here -->
     </div>
-
 
     <footer>
         <div id="blank">
@@ -61,7 +41,7 @@
             <div id="contact_details">
                 Email: raviraj.parab"vit.edu.in<br>
                 Phone: +123-456-7890<br>
-                Maharastra, India<br>
+                Maharashtra, India<br>
             </div>
         </div>
         <div id="footer_info">
@@ -75,11 +55,21 @@
                 <div>Cookie Preferences</div>
             </div>
         </div>
-
-
     </footer>
+
+    <!-- Login Form -->
+    <div class="login-form">
+        <h2>Login</h2>
+        <form method="post" action="login_process.php">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br>
+
+            <input type="submit" value="Login">
+        </form>
+    </div>
 </body>
-
-
 
 </html>
