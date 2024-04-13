@@ -13,29 +13,12 @@
     <div class="navbar">
         <div class="nav-items"><img id="logo" src="logo.png"></div>
         <div class="nav-items" id="home">Home</div>
-        <div class="nav-items"><a
-                href="http://localhost/My-Timetable/timetable/">Timetable</a>
-        </div>
-        <div class="nav-items"><a
-                href="http://localhost/events/events.html">Events</a></div>
+        <div class="nav-items"><a href="http://127.0.0.1:5500/timetable/index.html">Timetable</a></div>
+        <div class="nav-items"><a href="http://127.0.0.1:5500/events/events.html">Events</a></div>
         <div class="nav-items">About us</div>
-        <div class="nav-items" id="profile"><a
-                href="http://localhost/My-Timetable/login/login.html">Login</a>
-            <?php
-        // Start a PHP session
-        session_start();
-
-        // Check if the session variable containing the first name is set
-        if (isset($_SESSION['first_name'])) {
-            // If set, display a welcome message with the first name
-            echo "Welcome, " . $_SESSION['first_name'];
-        } else {
-            // If not set, display the "Login" link
-            echo '<a href="login.html">Login</a>';
-        }
-        ?>
+        <div class="nav-items" id="profile">
+            <a href="http://127.0.0.1:5500/login/login.html"><?php echo isset($_SESSION['first_name']) ? $_SESSION['first_name'] : 'Login'; ?></a>
         </div>
-
     </div>
 
     <div class="main_content">
@@ -59,7 +42,7 @@
         <div id="blank">
             <div id="contact">Contact with us:</div>
             <div id="contact_details">
-                Email: raviraj.parab"vit.edu.in<br>
+                Email: <a href="mailto:raviraj.parab@vit.edu.in">raviraj.parab@vit.edu.in</a><br>
                 Phone: +123-456-7890<br>
                 Maharashtra, India<br>
             </div>
@@ -76,20 +59,6 @@
             </div>
         </div>
     </footer>
-
-    <!-- Login Form -->
-    <div class="login-form">
-        <h2>Login</h2>
-        <form method="post" action="login_process.php">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required><br>
-
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required><br>
-
-            <input type="submit" value="Login">
-        </form>
-    </div>
 </body>
 
 </html>

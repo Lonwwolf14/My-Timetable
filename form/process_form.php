@@ -1,8 +1,6 @@
 <?php
-// Start a PHP session
 session_start();
 
-// Check if the form is submitted
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Retrieve form data
     $first_name = $_POST['first_name'];
@@ -40,39 +38,44 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         die("Connection failed: " . $conn->connect_error);
     }
 
-    // Prepare SQL statement to check if email already exists
-    $check_sql = "SELECT email FROM users WHERE email='$email'";
-    $result = $conn->query($check_sql);
+    // Prepare SQL statement to check if email already exists using prepared statements
+    $check_sql = "SELECT email FROM users WHERE email=?";
+    $check_stmt = $conn->prepare($check_sql);
+    $check_stmt->bind_param("s", $email);
+    $check_stmt->execute();
+    $check_stmt->store_result();
 
-    if ($result->num_rows > 0) {
+    if ($check_stmt->num_rows > 0) {
         // Email already exists, redirect to login page
-        header("Location: login.html");
+        header("Location: http://127.0.0.1:5500/login/login.html");
         exit;
     }
 
-    // Prepare SQL statement to insert data into the database
-    $sql = "INSERT INTO users (first_name, last_name, address, email, phone, password, gender)
-            VALUES ('$first_name', '$last_name', '$address', '$email', '$phone', '$hashed_password', '$gender')";
+    // Prepare SQL statement to insert data into the database using prepared statements
+    $insert_sql = "INSERT INTO users (first_name, last_name, address, email, phone, password, gender)
+            VALUES (?, ?, ?, ?, ?, ?, ?)";
+    $insert_stmt = $conn->prepare($insert_sql);
+    $insert_stmt->bind_param("sssssss", $first_name, $last_name, $address, $email, $phone, $hashed_password, $gender);
 
-    if ($conn->query($sql) === TRUE) {
-        // Registration successful, redirect to home page
-
+    if ($insert_stmt->execute()) {
+        // Registration successful, set a flag to display success message
+        $_SESSION['registration_success'] = true;
         // Save the first name in a session variable
         $_SESSION['first_name'] = $first_name;
 
-        // Redirect to the home page
-        header("http://localhost/My-Timetable/home/index.html");
+        // Close database connection
+        $insert_stmt->close();
+        $conn->close();
+
+        // Redirect to index.html
+        header("Location: http://127.0.0.1:5500/home/index.html");
         exit;
-
     } else {
-        echo "Error: " . $sql . "<br>" . $conn->error;
+        echo "Error: " . $insert_stmt->error;
     }
-
-    // Close database connection
-    $conn->close();
 } else {
     // If the form is not submitted, redirect to the registration form
-    header("Location: registration_form.html");
+    header("Location: register.html");
     exit;
 }
 ?>
