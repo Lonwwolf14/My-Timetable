@@ -19,13 +19,12 @@
         <div class="nav-items" id="profile">
             <?php
             session_start();
-            echo '<a href="L-index.html">';
-            if(isset($_SESSION['first_name'])) {
-                echo $_SESSION['first_name'];
+
+            if (isset($_SESSION['first_name']) && $_SESSION['first_name'] !== null) {
+                echo '<a href="#">' . $_SESSION['first_name'] . '</a>';
             } else {
-                echo 'Login';
+                echo '<a href="L-index.html">Login</a>';
             }
-            echo '</a>';
             ?>
         </div>
     </div>
