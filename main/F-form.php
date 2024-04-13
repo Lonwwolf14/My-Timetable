@@ -67,8 +67,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $insert_stmt->close();
         $conn->close();
 
-        // Redirect to index.html
-        header("Location: H-index.html");
+        // Redirect to login page
+        header("Location: L-index.html");
         exit;
     } else {
         echo "Error: " . $insert_stmt->error;

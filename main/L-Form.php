@@ -37,9 +37,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $_SESSION['first_name'] = $row['first_name'];
 
             // Redirect to dashboard or homepage
-            header("Location: H-index.html");
+            header("Location: H-index.php");
+            exit;
+        } else {
+            // Incorrect password
+            echo "<script>alert('Incorrect password'); window.location.href = 'L-index.html';</script>";
             exit;
         }
+    } else {
+        // User not found
+        echo "<script>alert('User not found'); window.location.href = 'L-index.html';</script>";
+        exit;
     }
 
     // Close connection
