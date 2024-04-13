@@ -6,18 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Timetable</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="H-styles.css">
 </head>
 
 <body>
     <div class="navbar">
         <div class="nav-items"><img id="logo" src="logo.png"></div>
         <div class="nav-items" id="home">Home</div>
-        <div class="nav-items"><a href="http://127.0.0.1:5500/timetable/index.html">Timetable</a></div>
-        <div class="nav-items"><a href="http://127.0.0.1:5500/events/events.html">Events</a></div>
+        <div class="nav-items"><a href="T-index.html">Timetable</a></div>
+        <div class="nav-items"><a href="E-index.html">Events</a></div>
         <div class="nav-items">About us</div>
         <div class="nav-items" id="profile">
-            <a href="http://127.0.0.1:5500/login/login.html"><?php echo isset($_SESSION['first_name']) ? $_SESSION['first_name'] : 'Login'; ?></a>
+            <?php
+            session_start();
+            echo '<a href="L-index.html">';
+            if(isset($_SESSION['first_name'])) {
+                echo $_SESSION['first_name'];
+            } else {
+                echo 'Login';
+            }
+            echo '</a>';
+            ?>
         </div>
     </div>
 

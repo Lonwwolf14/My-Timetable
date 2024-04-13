@@ -14,7 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Validate email format
     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
         echo "Invalid email format";
-        exit;
+        exit;   
     }
 
     // Validate phone number format
@@ -47,7 +47,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if ($check_stmt->num_rows > 0) {
         // Email already exists, redirect to login page
-        header("Location: http://127.0.0.1:5500/login/login.html");
+        header("Location: L-index.html");
         exit;
     }
 
@@ -68,14 +68,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $conn->close();
 
         // Redirect to index.html
-        header("Location: http://127.0.0.1:5500/home/index.html");
+        header("Location: H-index.html");
         exit;
     } else {
         echo "Error: " . $insert_stmt->error;
     }
 } else {
     // If the form is not submitted, redirect to the registration form
-    header("Location: register.html");
+    header("Location: F-index.html");
     exit;
 }
 ?>
