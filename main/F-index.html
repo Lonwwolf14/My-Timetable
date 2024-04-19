@@ -1,52 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
+<!-- Coding By CodingNepal - codingnepalweb.com -->
+<html lang="en" dir="ltr">
+  <head>
     <meta charset="UTF-8">
-    <title>Registration Form</title>
-    <link rel="stylesheet" href="F-styles.css" />
-</head>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title> 
+    <link rel="stylesheet" href="F-styles.css">
+   </head>
 <body>
-    <header>
-        <h1>Registration Form</h1>
-        <p>Please fill out this form with the required information</p>
-    </header>
+  <div class="wrapper">
+    <h2>Registration</h2>
     <form id="registrationForm" method="post" action="F-form.php">
-        <fieldset>
-            <label for="first_name">Enter Your First Name: <input id="first_name" name="first_name" type="text"
-                    required /></label>
-            <label for="last_name">Enter Your Last Name: <input id="last_name" name="last_name" type="text"
-                    required /></label>
-            <label for="address">Address: <textarea id="address" name="address" rows="3" cols="30"
-                    placeholder="Where do you live?"></textarea></label>
-        </fieldset>
-
-        <fieldset>
-            <label for="email">Enter Your Email(@vit.edu.in):<input id="email" name="email" type="email"
-                    required /></label>
-            <label for="phone">Enter Your Phone Number:</label>
-            <input id="phone" name="phone" type="tel" pattern="[0-9]{10}" required />
-        </fieldset>
-
-        <fieldset>
-            <label for="password">Choose a Password:</label>
-            <input id="password" name="password" type="password" required />
-        </fieldset>
-
-        <fieldset>
-            <label for="gender">Gender:</label>
-            <label><input id="male" type="radio" name="gender" class="inline" value="m" checked /> Male</label>
-            <label><input id="female" type="radio" name="gender" class="inline" value="f" /> Female</label>
-            <label><input id="other" type="radio" name="gender" class="inline" value="o" /> Other</label>
-        </fieldset>
-
-        <label for="terms-and-conditions">
-            <input class="inline" id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" />
-            I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
-        </label>
-        <input type="submit" value="Submit" />
+      <div class="input-box">
+        <label for="first_name">Enter Your First Name:</label>
+        <input id="first_name" name="first_name" type="text" placeholder="Enter your first name" required>
+      </div>
+      <div class="input-box">
+        <label for="last_name">Enter Your Last Name:</label>
+        <input id="last_name" name="last_name" type="text" placeholder="Enter your last name" required>
+      </div>
+      <div class="input-box">
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" rows="3" cols="30" placeholder="Enter your address" required></textarea>
+      </div>
+      <div class="input-box">
+        <label for="email">Enter Your Email(@vit.edu.in):</label>
+        <input id="email" name="email" type="email" placeholder="Enter your email" required>
+      </div>
+      <div class="input-box">
+        <label for="phone">Enter Your Phone Number:</label>
+        <input id="phone" name="phone" type="tel" pattern="[0-9]{10}" placeholder="Enter your phone number" required>
+      </div>
+      <div class="input-box">
+        <label for="password">Choose a Password:</label>
+        <input id="password" name="password" type="password" placeholder="Create password" required>
+      </div>
+      <div class="input-box">
+        <label for="gender">Gender:</label>
+        <div class="radio-buttons">
+          <input id="male" type="radio" name="gender" class="inline" value="m" checked> <label for="male">Male</label>
+          <input id="female" type="radio" name="gender" class="inline" value="f"> <label for="female">Female</label>
+          <input id="other" type="radio" name="gender" class="inline" value="o"> <label for="other">Other</label>
+        </div>
+      </div>      
+      <div class="policy">
+        <input type="checkbox" id="terms-and-conditions" name="terms-and-conditions" required>
+        <label for="terms-and-conditions">I accept all terms & conditions</label>
+      </div>
+      <div class="input-box button">
+        <input type="submit" value="Register Now">
+      </div>
+      <div class="text">
+        <h3>Already have an account? <a href="L-index.html">Login now</a></h3>
+      </div>
     </form>
+  </div>
 </body>
-
 </html>
