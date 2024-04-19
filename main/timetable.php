@@ -25,6 +25,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<script src="assets/js/html5shiv.js"></script>
 	<script src="assets/js/respond.min.js"></script>
 	<![endif]-->
+    
 </head>
 <style>
     * {
@@ -593,7 +594,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                                     <option>S04+S05:SNA M313A Operating Systems Lab</option>
                                     <option>S04+S05:SBP E301 Engineering Mathematics - IV</option>
                                     <option>S04+S05:VDD L05C Database Management System Lab</option>
-                                </select>
+z                                </select>
                             </div>
                         </td>
                         <td>
@@ -610,6 +611,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
                 </table>
                 <input type="submit" value="Submit" id="final_sub">
+
             </form>
         </div>
 

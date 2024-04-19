@@ -37,7 +37,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $_SESSION['first_name'] = $row['first_name'];
 
             // Redirect to dashboard or homepage
-            header("Location: H-index.php");
+            header("Location: home.php");
             exit;
         } else {
             // Incorrect password
