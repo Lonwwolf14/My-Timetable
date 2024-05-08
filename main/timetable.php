@@ -22,10 +22,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
-	<script src="assets/js/html5shiv.js"></script>
-	<script src="assets/js/respond.min.js"></script>
-	<![endif]-->
-    
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
 </head>
 <style>
     * {
@@ -170,22 +170,29 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     }
 
     #final_sub {
-    position: absolute;
-    left: 700px;
-    top: 550px;
-    background-color: #007bff; /* Button background color */
-    color: #fff; /* Button text color */
-    padding: 10px 20px; /* Padding around the button text */
-    border: none; /* Remove border */
-    border-radius: 5px; /* Add border radius */
-    cursor: pointer; /* Change cursor to pointer on hover */
-    font-size: 16px; /* Font size */
-}
+        position: absolute;
+        left: 700px;
+        top: 550px;
+        background-color: #007bff;
+        /* Button background color */
+        color: #fff;
+        /* Button text color */
+        padding: 10px 20px;
+        /* Padding around the button text */
+        border: none;
+        /* Remove border */
+        border-radius: 5px;
+        /* Add border radius */
+        cursor: pointer;
+        /* Change cursor to pointer on hover */
+        font-size: 16px;
+        /* Font size */
+    }
 
-#final_sub:hover {
-    background-color: #0056b3; /* Darker background color on hover */
-}
-
+    #final_sub:hover {
+        background-color: #0056b3;
+        /* Darker background color on hover */
+    }
 </style>
 
 <body>
@@ -205,9 +212,17 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     <li><a href="slot.php">Slot</a></li>
                     <li class="active"><a href="timetable.php">Timetable</a></li>
                     <li><a href="mytt.php">My Timetable</a></li>
-                    <li><a href="event.php">Events</a></li>   
-                    <li><a href="F-index.html"><img src="assets\images\signupbutton.png" alt="sign up"
-                                width="100px"></a></li>
+                    <li><a href="event.php">Events</a></li>
+                    <li class="nav-items" id="profile">
+                        <?php
+
+                        if (isset($_SESSION['first_name'])) {
+                            echo '<a href="#">' . $_SESSION['first_name'] . '</a>';
+                        } else {
+                            echo '<a href="L-index.html">Login</a>';
+                        }
+                        ?>
+                    </li>
                 </ul>
             </div>
             <!--/.nav-collapse -->
@@ -218,7 +233,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <header id="head" class="secondary">
         <div class="container">
             <h1>TIME TABLE</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing eliras scele!</p>
         </div>
     </header>
     <div class="main_body">
@@ -594,7 +608,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                                     <option>S04+S05:SNA M313A Operating Systems Lab</option>
                                     <option>S04+S05:SBP E301 Engineering Mathematics - IV</option>
                                     <option>S04+S05:VDD L05C Database Management System Lab</option>
-z                                </select>
+                                    z
+                                </select>
                             </div>
                         </td>
                         <td>
