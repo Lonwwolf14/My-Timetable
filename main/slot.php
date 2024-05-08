@@ -225,6 +225,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
       <!-- Add more rows as needed -->
     </table>
 
+    <div style="text-align: center; margin-top: 20px; font-size: 20px;">
+      <a href="https://docs.google.com/spreadsheets/d/1ogDFWtnS0wmuUYrT9jQJ-8xQINFOznHylLLEr0fGbqw/edit?usp=sharing"
+        target="_blank">View in Google Sheets</a>
+    </div>
+
+
   </body>
 
 </html>

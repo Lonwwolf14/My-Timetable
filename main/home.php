@@ -36,7 +36,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span
 						class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
 				<a class="navbar-brand" href="index.html">
-					<img src="assets/images/logo.png" alt="Techro HTML5 template"></a>
+					<img src="assets/images/logo.png" alt="VIT Logo"></a>
 			</div>
 			<div class="navbar-collapse collapse">
 				<ul class="nav navbar-nav pull-right mainNav">
@@ -83,8 +83,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					</div>
 					<div data-thumb="assets/images/slides/thumbs/img2.jpg" data-src="assets/images/slides/img2.jpg">
 					</div>
-					<div data-thumb="assets/images/slides/thumbs/img3.jpg" data-src="assets/images/slides/img3.jpg">
-					</div>
 				</div><!-- #camera_wrap_3 -->
 			</div><!-- .fluid_container -->
 		</div>
@@ -99,9 +97,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<img src="assets/images/1.png" alt="" />
 					</div><!--icon box top -->
 					<h4>Dr.Mandar Sohani</h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tempus eleifend risus ut congue
-						eset nec lacus elit dor broma.</p>
-					<p><a href="#"><em>Read More</em></a></p>
+					<p><a href="https://vit.edu.in/MandarSohani.html"><em>Read More</em></a></p>
 				</div><!--grey box -->
 			</div><!--/span3-->
 			<div class="col-md-3">
@@ -110,9 +106,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<img src="assets/images/2.png" alt="" />
 					</div><!--icon box top -->
 					<h4>Pankaj Vanwari</h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tempus eleifend risus ut congue
-						eset nec lacus elit dor broma.</p>
-					<p><a href="#"><em>Read More</em></a></p>
+					<p><a href="https://vit.edu.in/PankajVanwari.html"><em>Read More</em></a></p>
 				</div><!--grey box -->
 			</div><!--/span3-->
 			<div class="col-md-3">
@@ -121,9 +115,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<img src="assets/images/3.png" alt="" />
 					</div><!--icon box top -->
 					<h4>Suja Jayachandran</h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tempus eleifend risus ut congue
-						eset nec lacus elit dor broma.</p>
-					<p><a href="#"><em>Read More</em></a></p>
+					<p><a href="https://vit.edu.in/SujaJayachandran.html"><em>Read More</em></a></p>
 				</div><!--grey box -->
 			</div><!--/span3-->
 			<div class="col-md-3">
@@ -132,9 +124,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<img src="assets/images/4.png" alt="" />
 					</div><!--icon box top -->
 					<h4>Dr.Sachin Bojewar</h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tempus eleifend risus ut congue
-						eset nec lacus elit dor broma.</p>
-					<p><a href="#"><em>Read More →</em></a></p>
+					<p><a href="https://vit.edu.in/SachinBojewar.html"><em>Read More →</em></a></p>
 				</div><!--grey box -->
 			</div><!--/span3-->
 		</div>
@@ -146,13 +136,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<div class="title-box clearfix ">
 					<h2 class="title-box_primary">About Us</h2>
 				</div>
-				<p><span>Perspiciatis unde omnis iste natus error sit voluptatem. Cum sociis natoque penatibus et magnis
-						dis parturient montes ascetur ridiculus musull dui.</span></p>
-				<p>Lorem ipsumulum aenean noummy endrerit mauris. Cum sociis natoque penatibus et magnis dis parturient
-					montes ascetur ridiculus mus. Null dui. Fusce feugiat malesuada odio.</p>
-				<p>Lorem ipsumulum aenean noummy endrerit mauris. Cum sociis natoque penatibus et magnis dis parturient
-					montes ascetur ridiculus mus. Null dui. Fusce feugiat malesuada odio.</p>
-				<a href="#" title="read more" class="btn-inline " target="_self">read more</a>
+				<p><span>The Institute is accredited by National Assessment and Accreditation Council (NAAC): A+
+The following courses are accredited by National Board of Accreditation (NBA): Biomedical Engineering, Electronics Engineering, and Electronics and Telecommunication Engineering.</p>
+				<a href="https://vit.edu.in/index.html" title="read more" class="btn-inline " target="_self">read more</a>
 			</div>
 
 
@@ -182,9 +168,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							<h4>Contact</h4>
 							<p>Lorem reksi this dummy text unde omnis iste natus error sit volupum</p>
 							<div class="contact-info">
-								<i class="fa fa-map-marker"></i> Kerniles 416 - United Kingdom<br>
-								<i class="fa fa-phone"></i>+00 123 156 711 <br>
-								<i class="fa fa-envelope-o"></i> youremail@email.com
+								<i class="fa fa-map-marker"></i> Wadala, Inida<br>
+								<i class="fa fa-phone"></i>+91 7498187460 <br>
+								<i class="fa fa-envelope-o"></i>parabraviraj142730@email.com
 							</div>
 						</div><!-- end widget -->
 					</div>
@@ -193,27 +179,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 			<div class="clear"></div>
 			<!--CLEAR FLOATS-->
-		</div>
-		<div class="footer2">
-			<div class="container">
-				<div class="row">
-
-					<div class="col-md-6 panel">
-						<div class="panel-body">
-							<p class="simplenav">
-								<a href="index.html">Home</a> |
-								<a href="about.html">Slot</a> |
-								<a href="courses.html">TimeTable</a> |
-								<a href="price.html">My TimeTable</a> |
-								<a href="videos.html">Events</a> |
-								<a href="contact.html">Profile</a>
-							</p>
-						</div>
-					</div>
-
-				</div>
-				<!-- /row of panels -->
-			</div>
 		</div>
 	</footer>
 
